@@ -1,12 +1,14 @@
 body.space {
-	
-	overflow: hidden; /* anything that exceeds the bounds of the screen will be hidden */
+
+	overflow: hidden;
+	/* anything that exceeds the bounds of the screen will be hidden */
 	background: url('images/bg.jpg');
 	background-size: cover;
 	margin: 0;
 	height: 100vh;
 	display: flex;
-	align-items: center; /* centers all children along a single axis */
+	align-items: center;
+	/* centers all children along a single axis */
 	justify-content: center;
 }
 
@@ -14,13 +16,175 @@ body.space {
 	position: relative;
 	width: 800px;
 	height: 800px;
-	display: flex; /* centers the main content pane itself */
+	display: flex;
+	/* centers the main content pane itself */
 	justify-content: center;
 	align-items: center;
 }
 
 .planets {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 0%;
+	left: 30%;
+}
+
+@keyframes mercury {
+0%{
+transform:rotate(0deg) translateX(550px);
+}
+100%{
+transform:rotate(360deg) translateX(550px);
+}
+}
+@keyframes venus{
+0%{
+transform:rotate(0deg) translateX(400px);
+}
+100%{
+transform:rotate(360deg) translateX(400px);
+}
+
+}
+@keyframes earf{
+0%{
+transform:rotate(0deg) translateX(700px);
+}
+100%{
+transform:rotate(360deg) translateX(700px);
+}
+
+}
+@keyframes mars{
+0%{
+transform:rotate(0deg) translateX(800px);
+}
+100%{
+transform:rotate(360deg) translateX(800px);
+}
+
+}
+@keyframes jupiter{
+0%{
+transform:rotate(0deg) translateX(550px);
+}
+100%{
+transform:rotate(360deg) translateX(550px);
+}
+
+}
+@keyframes saturn{
+0%{
+transform:rotate(0deg) translateX(1000px);
+}
+100%{
+transform:rotate(360deg) translateX(1000px);
+}
+
+}
+@keyframes uranus{
+0%{
+transform:rotate(0deg) translateX(1500px);
+}
+100%{
+transform:rotate(360deg) translateX(1500px);
+}
+
+}
+@keyframes neptune{
+0%{
+transform:rotate(0deg) translateX(1800px);
+}
+100%{
+transform:rotate(360deg) translateX(1800px);
+}
+
+}
+@keyframes eris{
+0%{
+transform:rotate(0deg) translateX(30000px);
+}
+100%{
+transform:rotate(360deg) translateX(30000px);
+}
+
+}
+@keyframes kars{
+0%{
+transform:translateX(-50000px);
+}
+100%{
+transform:rotate(360deg) translateX(40000px);
+}
+
+}
+.sun {}
+
+#mercury {
+	animation: mercury 2.4s infinite linear;
+	left: 415px;
+	top: 170px;
+	scale: 38%;}
+
+#venus {
+	animation: venus 6.4s infinite linear;
+	left: 415px;
+	top: 170px;
+	scale: 95%;
+}
+
+#earth {
+	animation: earf 10s infinite linear;
+	left: 415px;
+	top: 170px;
+}
+
+#mars {
+	animation: mars 18.8s infinite linear;
+	left: 415px;
+	top: 170px;
+}
+
+#jupiter {
+	animation: jupiter 118.630136999s infinite linear;
+	left: 415px;
+	top: 170px;
+	scale: 300%;
+}
+
+#saturn {
+	animation: saturn 294.7s infinite linear;
+	left: 415px;
+	top: 170px;
+	scale: 200%;
+}
+
+#uranus {
+	animation: uranus 840.7s infinite linear;
+	left: 415px;
+	top: 170px;
+	scale: 150%;
+}
+
+#neptune {
+	animation: neptune 1649.09s infinite linear;
+	left: 415px;
+	top: 170px;
+	scale: 150%;
+}
+#Astroidbelt {
+	left: 200px;
+	top: -50px;
+	scale: 450%;
+}
+#Eris {
+	animation: eris 5600s infinite linear;
+	left: 415px;
+	top: 0px;
+	scale: 10%;
+}
+#Kars{
+	animation: kars 1s infinite linear;
+	left: 415px;
+	top: 1000px;
+	scale: 10%;
 }
